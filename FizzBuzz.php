@@ -7,11 +7,11 @@ class FizzBuzz{
 		$this->n=$n;
 		$this->atvalue1=$atvalue1;
 	}
-	//For multiples of three print Fizz instead of the number
+	//For the multiples of five print Buzz instead of the number
 	function printatmultiples(){
 			for($i=1; $i<=$this->n; $i++){
 				if($i%$this->atvalue1==0)
-					echo "Fizz</br>";
+					echo "Buzz</br>";
 				else
 					echo $i."</br>";
 					
@@ -21,5 +21,5 @@ class FizzBuzz{
 	
 }
 
-$obj=new FizzBuzz(20,3);
+$obj=new FizzBuzz(20,5);
 $obj->printatmultiples();
